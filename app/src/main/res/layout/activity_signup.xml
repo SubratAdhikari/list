@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#14514B"
+    tools:context=".Signup">
+
+
+        <TextView
+            android:layout_marginTop="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardBackgroundColor="#14514B"
+            android:layout_gravity="center"
+            app:cardCornerRadius="360dp"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/addphoto"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+
+                android:scaleType="centerCrop"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtsname"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:singleLine="true"
+            android:textColorHint="@color/teal_200"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtsnumber"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:singleLine="true"
+            android:textColorHint="@color/teal_200"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtsage"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Age"
+            android:singleLine="true"
+            android:textColorHint="@color/teal_200"
+
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtsemail"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:singleLine="true"
+            android:textColorHint="@color/teal_200"
+
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtspassword"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/teal_200"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtscpassword"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Conform Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/teal_200"
+
+            />
+
+        <Button
+            android:id="@+id/btnssignup"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Signup"
+            android:textSize="20dp"
+            android:onClick="btnssignup"
+            />
+
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#14514B"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="#009688"
+        android:paddingLeft="20dp"
+        android:text="Profile"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="#14514B"
+            android:layout_gravity="center"
+            app:cardCornerRadius="360dp"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/addphoto"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+
+                android:scaleType="centerCrop"
+
+                />
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="3dp"
+            android:background="#009688"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@color/teal_200"
+            android:layout_marginTop="30dp"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="***********"
+            android:textColor="#80EC14"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Mail ID:"
+            android:textColor="@color/teal_200"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="***********"
+            android:textColor="#80EC14"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textColor="@color/teal_200"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            />
+
+        <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="**********"
+            android:textColor="#80EC14"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            />
+
+        <Button
+            android:id="@+id/btnuserlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User List"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+<ProgressBar
+    android:layout_marginTop="300dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    />
+
+
+
+
+</LinearLayout>
